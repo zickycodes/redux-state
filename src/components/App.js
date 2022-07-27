@@ -12,12 +12,14 @@ import StreamsShow from "./streams/StreamShow";
 
 const App = () => {
 
+
   return (
     <div className="ui container">
-      <Header />
+      
+      <Header  />
       
       <Routes>
-        <Route path="/" element={<StreamList />} />
+        <Route path="/" element={<StreamList/>} />
         <Route path="/streams/show" element={<StreamsShow />} />
         <Route path="/streams/delete" element={<StreamDelete />} />
         <Route path="/streams/edit" element={<StreamEdit />} />
